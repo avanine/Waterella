@@ -9,4 +9,4 @@ Ohtu miniprojekti
 - Koodityyli on yhtenäistä
 - Luokat ja muuttujat on nimetty järkevästi
 - Luokkakohtainen yksikkötestikattavuus 80%
-- Käyttäjän näkökulmasta feature toimii ja on mukava käyttää
+- Käyttäjän näkökulmasta feature toimii
