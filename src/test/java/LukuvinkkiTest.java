@@ -35,8 +35,8 @@ public class LukuvinkkiTest {
 
     @Test
     public void setKuvausTest() {
-        vinkki.setKuvaus("Hello");
-        assertEquals("Kuvaus: Hello", vinkki.getKuvaus());
+        vinkki.setKuvaus("Heihei");
+        assertEquals("Kuvaus: Heihei", vinkki.getKuvaus());
     }
 
     @Test
