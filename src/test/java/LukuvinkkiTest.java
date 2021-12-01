@@ -15,9 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author hejoel
  */
 public class LukuvinkkiTest {
-    
+
     Lukuvinkki vinkki;
-    
 
     @BeforeEach
     public void setUp() {
@@ -27,6 +26,24 @@ public class LukuvinkkiTest {
     @Test
     public void konstruktoriLuoOikeanNimisenLukuvinkin() {
         assertEquals("Otsikko: Tuoteseloste", vinkki.getNimi());
+    }
+
+    @Test
+    public void konstruktoriLuoLukuvinkilleTyhjanKuvauksen() {
+        assertEquals("Kuvaus: ", vinkki.getKuvaus());
+    }
+
+    @Test
+    public void setKuvausTest() {
+        vinkki.setKuvaus("Hello");
+        assertEquals("Kuvaus: Hello", vinkki.getKuvaus());
+    }
+
+    @Test
+    public void toStringTest() {
+        vinkki.setNimi("Joku");
+        vinkki.setKuvaus("Hello");
+        assertEquals("Otsikko: Joku" + "\n" + "Kuvaus: Hello", vinkki.toString());
     }
 
 }
