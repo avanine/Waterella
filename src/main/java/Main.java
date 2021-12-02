@@ -14,7 +14,6 @@ public class Main {
 //        System.out.println();
 //        System.out.println(vinkki.getNimi());
 //        System.out.println(vinkki.getKuvaus());
-          Kayttoliittyma k = new Kayttoliittyma();
-          k.start();
+          Kayttoliittyma.start();
     }
 }

@@ -5,14 +5,14 @@ public class Kayttoliittyma {
     
     public static void start() {
     
-      Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String nimi;
         String kuvaus;
         Lukuvinkki vinkki;
         ArrayList<Lukuvinkki> vinkit = new ArrayList<>();
         
         while (true) {
-            System.out.println("Anna lukuvinkin nimi: (tyhjä lopettaa)");
+            System.out.println("Anna lukuvinkin nimi (tyhjä lopettaa):");
             nimi = sc.nextLine();
             if (nimi.equals("")) {
                 break;
