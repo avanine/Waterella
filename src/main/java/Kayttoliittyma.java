@@ -9,7 +9,7 @@ public class Kayttoliittyma {
         String nimi;
         String kuvaus;
         Lukuvinkki vinkki;
-        ArrayList<Lukuvinkki> vinkit = new ArrayList<>();
+        Vinkit vinkit = new Vinkit();
         
         while (true) {
             System.out.println("Anna lukuvinkin nimi (tyhjä lopettaa):");
@@ -21,12 +21,9 @@ public class Kayttoliittyma {
             kuvaus = sc.nextLine();
             vinkki = new Lukuvinkki(nimi);
             vinkki.setKuvaus(kuvaus);
-            vinkit.add(vinkki);
-        }
-        
-        for (int i = 0; i < vinkit.size(); i++) {
-            System.out.println(vinkit.get(i));
-            System.out.println("");
+            vinkit.lisaa(vinkki);
+
+            vinkit.listaaVinkit();
         }
     
     }
