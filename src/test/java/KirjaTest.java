@@ -21,8 +21,8 @@ public class KirjaTest {
     }
 
     @Test
-    public void konstruktoriLuoOikeanNimisenLukuvinkin() {
-        assertEquals("Tuoteseloste", vinkki.getNimi());
+    public void konstruktoriLuoOikeanOtsikkosenLukuvinkin() {
+        assertEquals("Tuoteseloste", vinkki.getOtsikko());
     }
 
     @Test
@@ -38,7 +38,7 @@ public class KirjaTest {
 
     @Test
     public void toStringTest() {
-        vinkki.setNimi("Joku");
+        vinkki.setOtsikko("Joku");
         vinkki.setKuvaus("Hello");
         assertEquals("Otsikko: Joku" + "\n" + "Kuvaus: Hello" + "\n" + "Tyyppi: Kirja" + "\n", vinkki.toString());
     }

@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Podcast implements LukuvinkkiInterface {
     private List<String> tekijat;
-    private String nimi;
+    private String otsikko;
     private URL url;
     private String kuvaus;
     private List<String> relatedCourses;
 
-    public Podcast(String nimi) {
-        this.nimi = nimi;
+    public Podcast(String otsikko) {
+        this.otsikko = otsikko;
         this.kuvaus = "";
         this.relatedCourses = new ArrayList<>();
     }
@@ -43,13 +43,13 @@ public class Podcast implements LukuvinkkiInterface {
     }
 
     @Override
-    public String getNimi() {
-        return this.nimi;
+    public String getOtsikko() {
+        return this.otsikko;
     }
 
     @Override
-    public void setNimi(String nimi) {
-        this.nimi = nimi;
+    public void setOtsikko(String otsikko) {
+        this.otsikko = otsikko;
     }
 
     @Override
@@ -114,7 +114,7 @@ public class Podcast implements LukuvinkkiInterface {
 
     @Override
     public String toString() {
-        return "Otsikko: " + this.nimi + "\n" +
+        return "Otsikko: " + this.otsikko + "\n" +
                 "Kuvaus: " + this.kuvaus + "\n" +
                 "Tyyppi: Podcast";
     }

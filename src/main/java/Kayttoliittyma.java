@@ -5,16 +5,16 @@ public class Kayttoliittyma {
     public static void start() {
     
         Scanner sc = new Scanner(System.in);
-        String nimi;
+        String otsikko;
         String kuvaus;
         String tyyppi;
         LukuvinkkiInterface vinkki;
         Vinkit vinkit = new Vinkit();
         
         while (true) {
-            System.out.println("Anna lukuvinkin nimi (tyhjä lopettaa):");
-            nimi = sc.nextLine();
-            if (nimi.equals("")) {
+            System.out.println("Anna lukuvinkin otsikko (tyhjä lopettaa):");
+            otsikko = sc.nextLine();
+            if (otsikko.equals("")) {
                 break;
             }
 
@@ -27,9 +27,9 @@ public class Kayttoliittyma {
             System.out.println("Lukuvinkin kuvaus: ");
             kuvaus = sc.nextLine();
             if(tyyppi.equals("K")) {
-                vinkki = new Kirja(nimi);
+                vinkki = new Kirja(otsikko);
             } else {
-                vinkki = new Podcast(nimi);
+                vinkki = new Podcast(otsikko);
             }
             vinkki.setKuvaus(kuvaus);
             vinkit.lisaa(vinkki);
