@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Kayttoliittyma {
@@ -8,7 +7,8 @@ public class Kayttoliittyma {
         Scanner sc = new Scanner(System.in);
         String nimi;
         String kuvaus;
-        Lukuvinkki vinkki;
+        String tyyppi;
+        LukuvinkkiInterface vinkki;
         Vinkit vinkit = new Vinkit();
         
         while (true) {
@@ -17,9 +17,20 @@ public class Kayttoliittyma {
             if (nimi.equals("")) {
                 break;
             }
+
+            System.out.println("Lukuvinkin tyyppi (K = Kirja, P = Podcast, muu lopettaa): ");
+            tyyppi = sc.nextLine();
+            if (!tyyppi.equals("K") && !tyyppi.equals("P")) {
+                break;
+            }
+
             System.out.println("Lukuvinkin kuvaus: ");
             kuvaus = sc.nextLine();
-            vinkki = new Lukuvinkki(nimi);
+            if(tyyppi.equals("K")) {
+                vinkki = new Kirja(nimi);
+            } else {
+                vinkki = new Podcast(nimi);
+            }
             vinkki.setKuvaus(kuvaus);
             vinkit.lisaa(vinkki);
 
