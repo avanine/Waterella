@@ -13,7 +13,7 @@ Projektin [backlog](https://docs.google.com/spreadsheets/d/1YS67ZnjvREJ0vO-hO_yo
 - Testit menevät läpi ja uusin versio läpäisee CI:n
 - Koodityyli on yhtenäistä
 - Luokat ja muuttujat on nimetty järkevästi
-- Luokkakohtainen yksikkötestikattavuus 70%
+- Luokkakohtaista yksikkötestausta tehty
 - Ohjelman toiminta on riittävän sujuvaa käyttäjän näkökulmasta
 
 # Asennus- ja käyttöohjeet
