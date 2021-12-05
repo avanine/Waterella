@@ -1,7 +1,7 @@
 # Waterella
 ![Github Actions](https://github.com/joonakauranen/Waterella/workflows/Java%20CI%20with%20Gradle/badge.svg)
 
-Lukuvinkkikirjasto
+# Lukuvinkkikirjasto
 
 Lukuvinkkikirjaston avulla erilaiset linkit ja muut muistiinpanot pysyvät järjestyksessä.
 
