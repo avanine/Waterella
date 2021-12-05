@@ -1,5 +1,6 @@
 # Waterella
 ![Github Actions](https://github.com/joonakauranen/Waterella/workflows/Java%20CI%20with%20Gradle/badge.svg)
+[![codecov](https://codecov.io/gh/joonakauranen/Waterella/branch/main/graph/badge.svg?token=D2Q0ZC7BPH)](https://codecov.io/gh/joonakauranen/Waterella)
 
 # Lukuvinkkikirjasto
 
