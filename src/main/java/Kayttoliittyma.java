@@ -26,7 +26,7 @@ public class Kayttoliittyma {
 
             System.out.println("Lukuvinkin kuvaus: ");
             kuvaus = sc.nextLine();
-            if(tyyppi.equals("K")) {
+            if (tyyppi.equals("K")) {
                 vinkki = new Kirja(otsikko);
             } else {
                 vinkki = new Podcast(otsikko);
