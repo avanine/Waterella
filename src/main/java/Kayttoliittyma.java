@@ -19,7 +19,7 @@ public class Kayttoliittyma {
                 break;
             }
 
-            if (komento.equals("L")){
+            if (komento.equals("L")) {
                 System.out.println("Anna lukuvinkin otsikko (tyhjä lopettaa):");
                 otsikko = sc.nextLine();
                 if (otsikko.equals("")) {
@@ -43,8 +43,9 @@ public class Kayttoliittyma {
                 vinkit.lisaa(vinkki);
             }
 
-            if (komento.equals("T"))
+            if (komento.equals("T")) {
             vinkit.listaaVinkit();
+            }
         }
     
     }
