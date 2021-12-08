@@ -63,11 +63,12 @@ public class Kirja implements LukuvinkkiInterface {
 
     @Override
     public void setKommentti(String kommentti) {
-
+        this.kommentti = kommentti; 
     }
 
     @Override
     public void addLiittyvaKurssi(String kurssi) {
+        this.liittyvatKurssit.add(kurssi);
 
     }
 
@@ -137,8 +138,11 @@ public class Kirja implements LukuvinkkiInterface {
     /**
      *
      */
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 
-    private String getIsbn() {
+    public String getIsbn() {
         return this.isbn;
     }
 
