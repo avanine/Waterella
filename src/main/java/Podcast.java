@@ -8,11 +8,15 @@ public class Podcast implements LukuvinkkiInterface {
     private URL url;
     private String kuvaus;
     private List<String> relatedCourses;
+    private String kommentti;
+    private List<String> tagit;
 
     public Podcast(String otsikko) {
         this.otsikko = otsikko;
         this.kuvaus = "";
         this.relatedCourses = new ArrayList<>();
+        this.tekijat = new ArrayList<>();
+        this.tagit = new ArrayList<>();
     }
 
     @Override
@@ -64,52 +68,52 @@ public class Podcast implements LukuvinkkiInterface {
 
     @Override
     public String getKommentti() {
-        return null;
+        return this.kommentti;
     }
 
     @Override
     public void setKommentti(String kommentti) {
-
+        this.kommentti = kommentti;
     }
 
     @Override
     public void addLiittyvaKurssi(String kurssi) {
-
+        this.relatedCourses.add(kurssi);
     }
 
     @Override
     public void removeLiittyvaKurssi(String kurssi) {
-
+        this.removeFromListByString(relatedCourses, kurssi);
     }
 
     @Override
     public List<String> getLiittyvatKurssit() {
-        return null;
+        return relatedCourses;
     }
 
     @Override
     public String liittyvatKurssitToString() {
-        return null;
+        return listToString(relatedCourses);
     }
 
     @Override
     public void addTagi(String tagi) {
-
+        this.tagit.add(tagi);
     }
 
     @Override
     public void removeTagi(String tagi) {
-
+        this.removeFromListByString(tagit, tagi);
     }
 
     @Override
     public List<String> getTagit() {
-        return null;
+        return this.tagit;
     }
 
     @Override
     public String tagitToString() {
-        return null;
+        return listToString(tagit);
     }
 
     @Override
@@ -117,5 +121,20 @@ public class Podcast implements LukuvinkkiInterface {
         return "Otsikko: " + this.otsikko + "\n" +
                 "Kuvaus: " + this.kuvaus + "\n" +
                 "Tyyppi: Podcast";
+    }
+
+    private void removeFromListByString(List<String> list, String s) {
+        if (list.contains(s)) {
+            int i = list.indexOf(s);
+            list.remove(i);
+        }
+    }
+
+    private String listToString(List<String> list) {
+        String stringFromList = "";
+        for (String henkilo : list) {
+            stringFromList += henkilo + ", ";
+        }
+        return stringFromList;
     }
 }
