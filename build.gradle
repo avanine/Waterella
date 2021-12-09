@@ -36,10 +36,7 @@ jacocoTestReport {
     }
     afterEvaluate {
         classDirectories.setFrom(files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: [
-                "src/main/java/Kayttoliittyma.java",
-                "**/main/java/Main.class"
-            ])
+            fileTree(dir: it, exclude: ['main/Main.java'])
         }))
     }
 }
