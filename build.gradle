@@ -37,8 +37,8 @@ jacocoTestReport {
     afterEvaluate {
         classDirectories.setFrom(files(classDirectories.files.collect {
             fileTree(dir: it, exclude: [
-                "main/java/Kayttoliittyma.java",
-                "main/java/Main.java"
+                "**/main/java/Kayttoliittyma.java",
+                "**/main/java/Main.java"
             ])
         }))
     }
