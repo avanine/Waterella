@@ -6,8 +6,8 @@ public interface LukuvinkkiInterface {
     void addTekija(String tekija);
     void removeTekija(String tekija);
     String tekijatToString();
-    String getNimi();
-    void setNimi(String nimi);
+    String getOtsikko();
+    void setOtsikko(String nimi);
     String getKuvaus();
     void setKuvaus(String kuvaus);
     String getKommentti();

@@ -1,23 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author hejoel
- */
-public class KirjaTest {
 
-    Kirja vinkki;
+public class PodcastTest {
+
+    Podcast vinkki;
 
     @BeforeEach
     public void setUp() {
-        vinkki = new Kirja("Tuoteseloste");
+        vinkki = new Podcast("Tuoteseloste");
     }
 
     @Test
@@ -40,16 +32,18 @@ public class KirjaTest {
     public void toStringTest() {
         vinkki.setOtsikko("Joku");
         vinkki.setKuvaus("Hello");
-        assertEquals("Otsikko: Joku" + "\n" + "Kuvaus: Hello" + "\n" + "Tyyppi: Kirja" + "\n", vinkki.toString());
+      //  assertEquals("Otsikko: Joku" + "\n" + "Kuvaus: Hello" + "\n" + "Tyyppi: Podcast" + "\n", vinkki.toString());
     }
 
     @Test
     public void addTekijaTest() {
-        vinkki.addTekija("tekijä");
-        assertEquals("tekijä", vinkki.getTekijat().get(0));
+
+    vinkki.addTekija("tekijä");
+
+    assertEquals("tekijä", vinkki.getTekijat().get(0));
     }
 
-    @Test
+   @Test
     public void removeTekijaTest() {
         vinkki.addTekija("tekijä");
         vinkki.addTekija("tekijä2");
@@ -126,10 +120,6 @@ public class KirjaTest {
         assertEquals("tagi, ", vinkki.tagitToString());
     }
 
-    @Test
-    public void getIsbnTest() {
-        vinkki.setIsbn("1");
-        assertEquals("1", vinkki.getIsbn());
-    }
+   
 
 }

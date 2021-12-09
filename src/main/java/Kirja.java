@@ -2,17 +2,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Kirja implements LukuvinkkiInterface {
-    private List<String> tekijat;           // voi olla useampi tekijä
-    private String nimi;                    // huono nimitys, pitäis olla otsikko?
-    private String kuvaus;                  //
-    private String kommentti;               // todennäköisesti lista lukuvinkkiin jätetyistä kommenteista
-    private List<String> tagit;             //
-    private List<String> liittyvatKurssit;  //
-    private String isbn;                    //
+    private List<String> tekijat; // voi olla useampi tekijä
+    private String otsikko;
+    private String kuvaus;
+    private String kommentti; // todennäköisesti lista lukuvinkkiin jätetyistä kommenteista
+    private List<String> tagit;
+    private List<String> liittyvatKurssit;
+    private String isbn;
 
-    public Kirja(String nimi) {
+    public Kirja(String otsikko) {
         this.tekijat = new ArrayList<>();
-        this.nimi = nimi;
+        this.otsikko = otsikko;
         this.kuvaus = "";
         this.kommentti = "";
         this.tagit = new ArrayList<>();
@@ -40,12 +40,12 @@ public class Kirja implements LukuvinkkiInterface {
         return listToString(this.tekijat);
     }
 
-    public String getNimi() {
-        return this.nimi;
+    public String getOtsikko() {
+        return this.otsikko;
     }
 
-    public void setNimi(String nimi) {
-        this.nimi = nimi;
+    public void setOtsikko(String otsikko) {
+        this.otsikko = otsikko;
     }
 
     public String getKuvaus() {
@@ -63,11 +63,12 @@ public class Kirja implements LukuvinkkiInterface {
 
     @Override
     public void setKommentti(String kommentti) {
-
+        this.kommentti = kommentti; 
     }
 
     @Override
     public void addLiittyvaKurssi(String kurssi) {
+        this.liittyvatKurssit.add(kurssi);
 
     }
 
@@ -110,26 +111,38 @@ public class Kirja implements LukuvinkkiInterface {
     public String toString() {
         String kirja = "";
 
-        if (this.tekijat.size() > 1) kirja += "Kirjoittajat: " + tekijatToString() +"\n";
-        else if (this.tekijat.size() > 0) kirja += "Kirjoittaja" + tekijatToString() +"\n";
-
-        kirja += "Otsikko: " + getNimi() +"\n";
-        kirja += "Kuvaus: " + getKuvaus() +"\n";
+        if (this.tekijat.size() > 1) {
+            kirja += "Kirjoittajat: " + tekijatToString() + "\n";
+        } else if (this.tekijat.size() > 0) {
+            kirja += "Kirjoittaja" + tekijatToString() + "\n";
+        }
+        kirja += "Otsikko: " + getOtsikko() + "\n";
+        kirja += "Kuvaus: " + getKuvaus() + "\n";
         kirja += "Tyyppi: Kirja\n";
 
-        if (this.isbn.length() > 0) kirja += "ISBN: " + getIsbn() +"\n";
-        if (!tagit.isEmpty()) kirja += "Tagit: " + getTagit() +"\n";
-        if (!liittyvatKurssit.isEmpty()) kirja += "Aiheeseen liittyvät kurssit: " + liittyvatKurssitToString() +"\n";
-        if (this.kommentti.length() > 0) kirja += "Kommentti: " + getKommentti() +"\n";
-
+        if (this.isbn.length() > 0) {
+            kirja += "ISBN: " + getIsbn() + "\n";
+        }
+        if (!tagit.isEmpty()) {
+            kirja += "Tagit: " + getTagit() + "\n";
+        }
+        if (!liittyvatKurssit.isEmpty()) {
+            kirja += "Aiheeseen liittyvät kurssit: " + liittyvatKurssitToString() + "\n";
+        }
+        if (this.kommentti.length() > 0) {
+            kirja += "Kommentti: " + getKommentti() + "\n";
+        }
         return kirja;
     }
 
     /**
      *
      */
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 
-    private String getIsbn() {
+    public String getIsbn() {
         return this.isbn;
     }
 
