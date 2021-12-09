@@ -8,16 +8,15 @@ public class TipItem {
 
     @Id
     private String name;
+
     private String category;
     private String description;
 
-    public TipItem(String id, String name,
-            String category,
-            String description) {
+    public TipItem(String name, String category, String description) {
         super();
         this.name = name;
-        this.description = description;
         this.category = category;
+        this.description = description;
     }
 
     public String getName() {
@@ -28,7 +27,15 @@ public class TipItem {
         this.name = name;
     }
 
-    public String getCategory() {
+    public String getItemDescription() {
+        return description;
+    }
+
+    public void setItemDescription(String description) {
+        this.description = description;
+    }
+
+    public String getItemCategory() {
         return category;
     }
 
