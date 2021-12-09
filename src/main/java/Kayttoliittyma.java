@@ -44,7 +44,7 @@ public class Kayttoliittyma {
             }
 
             if (komento.equals("T")) {
-            vinkit.listaaVinkit();
+            System.out.println(vinkit.listaaVinkit());
             }
         }
     

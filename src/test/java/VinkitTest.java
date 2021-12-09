@@ -25,10 +25,11 @@ public class VinkitTest {
         assertEquals("Kirja", vinkki.vinkit.get(0).getOtsikko());
     }
 
-    /*@Test
+    @Test
     public void listaaVinkitTest() {
         vinkki.lisaa(kirja);
+        String tulostus = vinkki.listaaVinkit();
+        assertTrue(tulostus.contains("Kirja"));
         
-        assertEquals("Kirja", vinkki.vinkit.get(0).getOtsikko());
-    }*/
+    }
 }
