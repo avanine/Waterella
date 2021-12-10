@@ -8,7 +8,7 @@ Lukuvinkkikirjaston avulla erilaiset linkit ja muut muistiinpanot pysyvät järj
 
 # Backlog ja Testikattavuusraportti
 Projektin [backlog](https://docs.google.com/spreadsheets/d/1YS67ZnjvREJ0vO-hO_yopbMLsdOGx-G40kil7iPHx0M/edit#gid=7)
-Projektin .[testikattavuusraportti](https://app.codecov.io/gh/joonakauranen/Waterella)
+Projektin [testikattavuusraportti](https://app.codecov.io/gh/joonakauranen/Waterella)
 
 # Definition of done
 - User storyt on dokumentoitu backlogiin
