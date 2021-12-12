@@ -6,8 +6,9 @@
 
 Lukuvinkkikirjaston avulla erilaiset linkit ja muut muistiinpanot pysyvät järjestyksessä.
 
-# Backlog
-Projektin [backlog](https://docs.google.com/spreadsheets/d/1YS67ZnjvREJ0vO-hO_yopbMLsdOGx-G40kil7iPHx0M/edit#gid=7)
+# Backlog ja Testikattavuusraportti
+- Projektin [backlog](https://docs.google.com/spreadsheets/d/1YS67ZnjvREJ0vO-hO_yopbMLsdOGx-G40kil7iPHx0M/edit#gid=7)
+- Projektin [testikattavuusraportti](https://app.codecov.io/gh/joonakauranen/Waterella)
 
 # Definition of done
 - User storyt on dokumentoitu backlogiin
@@ -31,3 +32,9 @@ gradle run
 ```
 
 pääset käyttämään ohjelmaa.
+
+# Releases
+
+- Lataa JAR-tiedosto [täältä](https://github.com/joonakauranen/Waterella/releases/tag/v0.5)
+- Suorita komento _java -jar Waterella-1.0-SNAPSHOT.jar_ kansiossa jossa JAR-tiedosto on
+

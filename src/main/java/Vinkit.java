@@ -12,10 +12,15 @@ public class Vinkit {
         vinkit.add(vinkki);
     }
 
-    public void listaaVinkit() {
+    public String listaaVinkit() {
+
+        StringBuilder sb = new StringBuilder();
+
         for (int i = 0; i < vinkit.size(); i++) {
-            System.out.println(vinkit.get(i));
-            System.out.println("");
+            sb.append(vinkit.get(i));
+            sb.append("\n");
         }
+
+        return sb.toString();
     }
 }
