@@ -1,13 +1,13 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:8080/readingTip/getAll'
+const baseUrl = 'http://localhost:8080/readingTip/'
 
 const getAll = () => {
-    const request = axios.get(baseUrl)
+    const request = axios.get(baseUrl+'getAll')
     return request.then(response => response.data)
 }
 
 const create = newObject => {
-    const request = axios.post(baseUrl, newObject)
+    const request = axios.post(baseUrl+'add', newObject)
     return request.then(response => response.data)
 }
 

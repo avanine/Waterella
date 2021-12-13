@@ -9,7 +9,7 @@ function VinkkiLista(props) {
         lukuvinkkiService.getAll().then(response => {
             setLukuvinkit(response)
         })
-    }, [])
+    }, [lukuvinkit])
 
     return (
         <div className="col-md-6 mb-4">
