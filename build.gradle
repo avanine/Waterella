@@ -29,6 +29,8 @@ run {
 
 test {
     useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
 }
 
 application {
