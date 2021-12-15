@@ -6,9 +6,10 @@
 
 Lukuvinkkikirjaston avulla erilaiset linkit ja muut muistiinpanot pysyvät järjestyksessä.
 
-# Backlog ja Testikattavuusraportti
+# Backlog, Testikattavuusraportti ja CI
 - Projektin [backlog](https://docs.google.com/spreadsheets/d/1YS67ZnjvREJ0vO-hO_yopbMLsdOGx-G40kil7iPHx0M/edit#gid=7)
 - Projektin [testikattavuusraportti](https://app.codecov.io/gh/joonakauranen/Waterella)
+- Projektin [CI](https://github.com/joonakauranen/Waterella/actions)
 
 # Definition of done
 - User storyt on dokumentoitu backlogiin
