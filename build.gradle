@@ -17,15 +17,15 @@ repositories {
     mavenCentral()
 }
 
-/*project.ext {
+project.ext {
     cucumberVersion = '6.8.1'
-}*/
+}
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    //testCompile 'io.cucumber:cucumber-java:' + cucumberVersion
-    //testCompile 'io.cucumber:cucumber-junit:' + cucumberVersion
+    testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+    testImplementation 'io.cucumber:cucumber-junit:' + cucumberVersion
 
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
