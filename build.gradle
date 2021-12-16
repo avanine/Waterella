@@ -42,9 +42,9 @@ test {
     systemProperties System.getProperties()
 }
 
-application {
-    mainClass = 'Main'
-}
+/*application {
+    mainClass = 'src/main/java/com/waterella/mdbspringboot/LukuvinkkiApplication.java'
+}*/
 
 jacocoTestReport {
     reports {
@@ -53,14 +53,14 @@ jacocoTestReport {
     }
     afterEvaluate {
         classDirectories.setFrom(files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: ['main/Main.java'])
+            fileTree(dir: it, exclude: ['main/LukuvinkkiApplication.java'])
         }))
     }
 }
 
 jar {
     manifest {
-        attributes 'Main-Class': 'Main'
+        attributes 'Main-Class': 'LukuvinkkiApllication'
     }
 }
 

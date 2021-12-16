@@ -2,7 +2,7 @@ package com.waterella.mdbspringboot.model;
 
 import org.springframework.data.annotation.Id;
 
-public class Kirja implements LukuvinkkiInterface{
+public class Kirja implements LukuvinkkiInterface {
     @Id
     private String tekija;
     private String otsikko;
