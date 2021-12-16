@@ -7,11 +7,12 @@
 
 Lukuvinkkikirjaston avulla erilaiset linkit ja muut muistiinpanot pysyvät järjestyksessä.
 
-# Backlog, Testikattavuusraportti, CI ja Lisenssi
+# Backlog, Testikattavuusraportti, CI, Lisenssi ja Hyväksymiskriteerit
 - Projektin [backlog](https://docs.google.com/spreadsheets/d/1YS67ZnjvREJ0vO-hO_yopbMLsdOGx-G40kil7iPHx0M/edit#gid=7)
 - Projektin [testikattavuusraportti](https://app.codecov.io/gh/joonakauranen/Waterella)
 - Projektin [CI](https://github.com/joonakauranen/Waterella/actions)
 - Projektin [lisenssi](https://github.com/joonakauranen/Waterella/blob/main/LICENSE.txt)
+- Projektin [hyväksymiskriteerit](https://github.com/joonakauranen/Waterella/tree/main/src/test/resources/cucumber)
 
 # Definition of done
 - User storyt on dokumentoitu backlogiin
