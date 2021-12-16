@@ -1,3 +1,7 @@
+import com.waterella.mdbspringboot.model.Kirja;
+import com.waterella.mdbspringboot.model.LukuvinkkiInterface;
+import com.waterella.mdbspringboot.model.Podcast;
+
 import java.util.Scanner;
 
 public class Kayttoliittyma {

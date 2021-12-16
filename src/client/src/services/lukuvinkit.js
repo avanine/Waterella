@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:8080/readingTip/'
+const baseUrl = 'http://localhost:8080/lukuvinkki/'
 
 const getAll = () => {
     const request = axios.get(baseUrl+'getAll')
