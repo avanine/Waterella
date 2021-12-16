@@ -1,31 +1,68 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LisaaNappi from "./LisaaNappi";
 import LomakeInput from "./LomakeInput";
-function Lomake() {
-  const [type, setType] = useState('Kirja');
-  const [header, setHeader] = useState('');
-  const [ISBN, setISBN] = useState('');
+import lukuvinkkiService from '../services/lukuvinkit'
 
-  const handleSubmit = (e) => {
+function Lomake() {
+
+    const [podcast, setPodcast] = useState(false);
+    const [otsikko, setOtsikko] = useState('')
+    const [tyyppi, setTyyppi] = useState('kirja')
+    const [ISBN, setISBN] = useState('')
+    const [kuvaus, setKuvaus] = useState('')
+
+    const choosePodcast = () => {
+        setPodcast(!podcast)
+        podcast ? setTyyppi('podcast') : setTyyppi('kirja')
+    };
+
+
+    const handleOtsikkoChange = (event) => {
+        setOtsikko(event.target.value)
+    }
+
+    const handleISBNChange = (event) => {
+        setISBN(event.target.value)
+    }
+    const handleKuvausChange = (event) => {
+        setKuvaus(event.target.value)
+    }
+
+    const handleSubmit = (e) => {
         e.preventDefault();
+
+        console.log('otsikko: ', otsikko)
+
+        lukuvinkkiService.create({
+            name: otsikko,
+            category: tyyppi,
+            isbn: ISBN,
+            description: kuvaus
+        }).then(response => {
+            console.log('res: ', response)
+            setOtsikko('')
+            setTyyppi('')
+            setISBN('')
+            setKuvaus('')
+        }).catch(error => {
+            console.log(error.response.data.error)
+        })
+
         /* tässä pitäis jotenkin lisätä tiedot tietokantaan */
         console.log("lomake lähetetty");
-        console.log(type)
-        console.log(header)
-        {type==='Kirja' && console.log(ISBN)}
+        console.log(e.target[0].value)
+        console.log(e.target[1].value)
+        document.getElementById("form").reset();
     }
-  const onChange = (target) => {
-      setType(target.value);
-    };
 
     return (
         <div className="container col-md-4 col-md-offset-4">
             <form onSubmit={handleSubmit} className="mt-5" id="form">
                 <div className="form-group py-2">
                     <label htmlFor="tyyppi">Vinkin tyyppi</label>
-                  <select onChange={({ target}) => onChange(target)} className="form-control" id="tyyppi">
-                        <option value="Kirja">Kirja</option>
-                        <option value="Podcast" >Podcast</option>
+                    <select className="form-control" id="tyyppi">
+                        <option>Kirja</option>
+                        <option onClick={choosePodcast} >Podcast</option>
                     </select>
                 </div>
 
@@ -33,16 +70,19 @@ function Lomake() {
                     label="otsikko"
                     id="otsikko"
                     placeholder="Otsikko"
-                    setValue={setHeader}
-                    value={header}
+                    onChange={handleOtsikkoChange}
                 />
-                {type==='Kirja' && (
+                <LomakeInput
+                    label="isbn"
+                    id="isbn"
+                    placeholder="ISBN"
+                    onChange={handleISBNChange}
+                />
+                {podcast && (
                     <LomakeInput
                         label="isbn"
                         id="isbn"
                         placeholder="ISBN"
-                        setValue={setISBN}
-                        value={ISBN}
                     />
                 )}
                 <div className="form-group py-2">

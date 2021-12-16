@@ -3,3 +3,6 @@ build
 .idea
 /.nb-gradle/
 .DS_Store
+.vscode
+nbproject
+

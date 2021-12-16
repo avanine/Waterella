@@ -1,3 +1,5 @@
+import com.waterella.mdbspringboot.model.LukuvinkkiInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 
