@@ -12,9 +12,15 @@ repositories {
     mavenCentral()
 }
 
+project.ext {
+    cucumberVersion = '6.8.1'
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testCompile 'io.cucumber:cucumber-java:' + cucumberVersion
+    testCompile 'io.cucumber:cucumber-junit:' + cucumberVersion
 }
 
 run {
@@ -23,6 +29,8 @@ run {
 
 test {
     useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
 }
 
 application {
@@ -38,6 +46,12 @@ jacocoTestReport {
         classDirectories.setFrom(files(classDirectories.files.collect {
             fileTree(dir: it, exclude: ['main/Main.java'])
         }))
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
     }
 }
 
