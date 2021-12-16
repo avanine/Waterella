@@ -3,7 +3,13 @@ package com.waterella.mdbspringboot.controller;
 import com.waterella.mdbspringboot.model.LukuvinkkiInterface;
 import com.waterella.mdbspringboot.service.LukuvinkkiService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -15,7 +21,7 @@ public class LukuvinkkiController {
     private LukuvinkkiService lukuvinkkiService;
 
     @PostMapping("/add")
-    public String add(@RequestBody LukuvinkkiInterface LukuvinkkiInterface){
+    public String add(@RequestBody LukuvinkkiInterface LukuvinkkiInterface ) {
         lukuvinkkiService.saveVinkki(LukuvinkkiInterface);
         return "New lukuvinkki is added";
     }

@@ -1,6 +1,6 @@
 package com.waterella.mdbspringboot.model;
 
-import java.util.List;
+import org.springframework.stereotype.Component;
 
 public interface LukuvinkkiInterface {
 
