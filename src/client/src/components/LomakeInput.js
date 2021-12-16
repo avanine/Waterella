@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 
 const  LomakeInput = ({ value, setValue, label, placeholder, id }) => {
-
+  
   const onChange = (target) => {
     console.log(target.value);
     setValue(target.value);
