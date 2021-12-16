@@ -37,12 +37,12 @@ public class KirjaTest {
         assertEquals("Heihei", vinkki.getKuvaus());
     }
 
-    @Test
+    /*@Test
     public void toStringTest() {
         vinkki.setOtsikko("Joku");
         vinkki.setKuvaus("Hello");
         assertEquals("Otsikko: Joku" + "\n" + "Kuvaus: Hello" + "\n" + "Tyyppi: Kirja" + "\n", vinkki.toString());
-    }
+    }*/
 
     @Test
     public void addTekijaTest() {
