@@ -7,4 +7,4 @@ Feature: Käyttäjä pystyy lisäämään uuden podcastin
   Scenario: Lisää kuvaus
     Given Podcast luodaan nimellä podcast
     When kuvaus "podcastin kuvaus" lisätään
-    Then kirjan kuvaus tulee olla "podcastin kuvaus"
+    Then podcastin kuvaus tulee olla "podcastin kuvaus"
