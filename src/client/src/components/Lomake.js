@@ -21,6 +21,7 @@ function Lomake() {
 
 
     const handleOtsikkoChange = (event) => {
+        console.log(event.target.value)
         setOtsikko(event.target.value)
     }
 
@@ -59,12 +60,10 @@ function Lomake() {
                     </select>
                 </div>
 
-                <LomakeInput
-                    label="otsikko"
-                    id="otsikko"
-                    placeholder="Otsikko"
-                    onChange={handleOtsikkoChange}
-                />
+                <div>
+                    <label htmlFor="otsikko">Otsikko</label>
+                    <textarea value={otsikko} onChange={handleOtsikkoChange} id="otsikko" rows="1"></textarea>
+                </div>
 
                 <div className="form-group py-2">
                     <label htmlFor="lisatiedot">Lisätietoja</label>
