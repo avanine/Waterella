@@ -1,7 +1,5 @@
 package com.waterella.mdbspringboot.model;
 
-import org.springframework.stereotype.Component;
-
 public interface LukuvinkkiInterface {
 
     String getTekija();
