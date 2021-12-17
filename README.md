@@ -38,6 +38,19 @@ gradle run
 
 pääset käyttämään ohjelmaa.
 
+# Web-sovelluksen käyttöohjeet
+Mene kansioon backend/waterella ja anna komento:
+
+```
+./gradlew bootRun
+
+```
+Sitten mene kansioon src/client ja anna komennot:
+
+```
+npm install && npm run
+
+
 # Releases
 # 1.0
 - [Release 1.0](https://github.com/joonakauranen/Waterella/releases/tag/v1.0)
