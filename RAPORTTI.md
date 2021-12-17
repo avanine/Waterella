@@ -26,11 +26,11 @@ Uuden toiminnallisuuden toteuttamiseen käytettäviksi teknologioiksi valittiin 
 
 Tässä sprintissä haasteelliseksi osoittautui tietokannan, selainpuolen ja palvelinpuolen yhteensovittaminen. Työajan puitteissa teknologioihin tutustuminen eteni hyvin ja kaikki toiminnallisuus saatiin aloitettua, mutta kokonaisuutta ei onnistuttu toteuttamaan Definition of Donen määrittelemällä tavalla. Näin ollen päätettiin, että osaa sprintin user storyistä ei esitellä asiakkaalle vielä tässä vaiheessa.
 
-Asiakkeella näkyvä uusi toiminnallisuus esiteltiin siis vielä tässä vaiheessa tekstikäyttöliittymää käyttäen.
+Asiakkaalle näkyvä uusi toiminnallisuus esiteltiin siis vielä tässä vaiheessa tekstikäyttöliittymää käyttäen.
 
 ## Kolmas sprintti
 
-Kolmas sprintti koostui pääasiassa edellisessä sprintissä määriteltyjen user storyjen loppuun saattamisesta. Tämän lisäksi testikattavuutta paranneltiin ja viimeisen sprintin ollessa kyseessä myös Github repositorio viimeisteltiin asianmukaiseen kuntoon.
+Kolmas sprintti koostui pääasiassa edellisessä sprintissä määriteltyjen user storyjen loppuun saattamisesta. Tämän lisäksi testikattavuutta paranneltiin ja viimeisen sprintin ollessa kyseessä myös Github repositorio ja CI viimeisteltiin asianmukaiseen kuntoon.
 
 Scrumiin liittyvät vaiheet suoritettiin paljolti aiemmilta kahdelta sprintiltä tutulla tavalla. Tosin tällä viikolla tapasimme muutaman kerran “daily” scrumin merkeissä. Ei kuitenkaan päivittäin.
 
