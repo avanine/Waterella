@@ -1,16 +1,16 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.List;
 
 public class Vinkit {
-    //List<LukuvinkkiInterface> vinkit;
+    List<LukuvinkkiInterface> vinkit;
 
     public Vinkit() {
         vinkit = new ArrayList<>();
     }
 
-    /*public void lisaa(LukuvinkkiInterface vinkki) {
+    public void lisaa(LukuvinkkiInterface vinkki) {
         vinkit.add(vinkki);
-    }*/
+    }
 
     public String listaaVinkit() {
 
@@ -23,4 +23,4 @@ public class Vinkit {
 
         return sb.toString();
     }
-}
+}*/
