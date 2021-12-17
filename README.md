@@ -43,7 +43,6 @@ Mene kansioon backend/waterella ja anna komento:
 
 ```
 ./gradlew bootRun
-
 ```
 Sitten mene kansioon src/client ja anna komennot:
 
