@@ -1,4 +1,4 @@
-import com.waterella.mdbspringboot.model.Podcast;
+import com.Podcast;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
