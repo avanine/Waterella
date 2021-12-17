@@ -38,7 +38,9 @@ gradle run
 pääset käyttämään ohjelmaa.
 
 # Releases
-
+# 1.0
+- [Release 1.0](https://github.com/joonakauranen/Waterella/releases/tag/v1.0)
+# 0.5
 - Lataa JAR-tiedosto [täältä](https://github.com/joonakauranen/Waterella/releases/tag/v0.5)
 - Suorita komento _java -jar Waterella-1.0-SNAPSHOT.jar_ kansiossa jossa JAR-tiedosto on
 
