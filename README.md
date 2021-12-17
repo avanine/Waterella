@@ -49,6 +49,7 @@ Sitten mene kansioon src/client ja anna komennot:
 
 ```
 npm install && npm run
+```
 
 
 # Releases
