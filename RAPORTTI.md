@@ -18,13 +18,13 @@ Toteutukseen käytettiin Javaa, testaamiseen Junit-testauskehikkoa ja CI/CD-putk
 
 Scrumiin ja uuden sprintin aloittamiseen liittyvät vaiheet sujuivat toisen sprintin alussa sujuvasti. Retrospektiivissä totesimme ensimmäisen sprintin menneen pääosin suunnitelmien mukaan, mainitsemisen arvoisia vaikeuksia ei ensimmäisen sprintin aikana ollut tullut esiin.
 
-Asiakastapaamisessa asiakas toivoi toiminnallisuuden osalta muutamia lisäominaisuuksia ja pieniä muutoksia jo toteutettuun toiminnallisuuten. Lisäksi asiakas toivoi ohjelmiston siirtyvän tekstikäyttöliittymästä graafiseen käyttöliittymään.
+Asiakastapaamisessa asiakas toivoi toiminnallisuuden osalta muutamia lisäominaisuuksia ja pieniä muutoksia jo toteutettuun toiminnallisuuteen. Lisäksi asiakas toivoi ohjelmiston siirtyvän tekstikäyttöliittymästä graafiseen käyttöliittymään.
 
 Teknisellä tasolla asiakkaan toiveet vaativat ulkoisen tietokannan integroimista ja ensimmäisessä sprintissä luodun toiminnallisuuden päälle rakennettavaa uutta käyttöliittymää. Tässä vaiheessa user storyt jaettiin sopiviin teknisiin taskeihin.
 
 Uuden toiminnallisuuden toteuttamiseen käytettäviksi teknologioiksi valittiin Javan lisäksi JavaScript-kirjasto React ja MongoDB-tietokantaohjelmisto.
 
-Tässä sprintissä haasteelliseksi osoittautui tietokannan, selainpuolen ja palvelinpuolen yhteensovittaminen. Työajan puitteissa teknologioihin tutustuminen eteni hyvin ja kaikki toiminnallisuus saatiin aloitettua, mutta kokonaisuutta ei onnistuttu toteuttamaan Definition of Donen määrittelemällä tavalla. Näin ollen päätettiin osaa sprintin user storyistä ei esitellä asiakkaalle.
+Tässä sprintissä haasteelliseksi osoittautui tietokannan, selainpuolen ja palvelinpuolen yhteensovittaminen. Työajan puitteissa teknologioihin tutustuminen eteni hyvin ja kaikki toiminnallisuus saatiin aloitettua, mutta kokonaisuutta ei onnistuttu toteuttamaan Definition of Donen määrittelemällä tavalla. Näin ollen päätettiin, että osaa sprintin user storyistä ei esitellä asiakkaalle vielä tässä vaiheessa.
 
 Asiakkeella näkyvä uusi toiminnallisuus esiteltiin siis vielä tässä vaiheessa tekstikäyttöliittymää käyttäen.
 
