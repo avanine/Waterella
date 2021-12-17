@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class Kayttoliittyma {
 
@@ -51,3 +51,4 @@ public class Kayttoliittyma {
     }
 
 }
+*/
