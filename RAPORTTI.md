@@ -22,7 +22,7 @@ Asiakastapaamisessa asiakas toivoi toiminnallisuuden osalta muutamia lisäominai
 
 Teknisellä tasolla asiakkaan toiveet vaativat ulkoisen tietokannan integroimista ja ensimmäisessä sprintissä luodun toiminnallisuuden päälle rakennettavaa uutta käyttöliittymää. Tässä vaiheessa user storyt jaettiin sopiviin teknisiin taskeihin.
 
-Uuden toiminnallisuuden toteuttamiseen käytettäviksi teknologioiksi valittiin Javan lisäksi JavaScript-kirjasto React ja MongoDB-tietokantaohjelmisto.
+Uuden toiminnallisuuden toteuttamiseen käytettäviksi teknologioiksi valittiin Javan lisäksi JavaScript-kirjasto React, Spring-sovelluskehys ja MongoDB Atlas-tietokantaohjelmisto.
 
 Tässä sprintissä haasteelliseksi osoittautui tietokannan, selainpuolen ja palvelinpuolen yhteensovittaminen. Työajan puitteissa teknologioihin tutustuminen eteni hyvin ja kaikki toiminnallisuus saatiin aloitettua, mutta kokonaisuutta ei onnistuttu toteuttamaan Definition of Donen määrittelemällä tavalla. Näin ollen päätettiin, että osaa sprintin user storyistä ei esitellä asiakkaalle vielä tässä vaiheessa.
 
