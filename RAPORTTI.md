@@ -38,7 +38,7 @@ Suurin tämän sprintin sisältämä työ muodostui tietokannan, selainpuolen ja
 
 ## Yleistä projektista
 
-Keskeisimpiä projektiin liittyviä oppimiskokemuksia syntyi paljon kurssin yhteydessä esiteltyyn ohjelmistotuotantomalliin Scrumiin liittyen. Hyvää harkoitusta tuli myös tiimityöskentelystä, kommunikoinnista ja muusta tekniseen toteutukseen liittyvästä, mutta kuitenkin jokseenkin siitä eroavista käytännöistä.
+Keskeisimpiä projektiin liittyviä oppimiskokemuksia syntyi paljon kurssin yhteydessä esiteltyyn ohjelmistotuotantomalliin Scrumiin liittyen. Hyvää harjoitusta tuli myös tiimityöskentelystä, kommunikoinnista ja muusta tekniseen toteutukseen liittyvästä, mutta kuitenkin jokseenkin siitä eroavista käytännöistä.
 
 Aikaa projektiin oli suhteellisen vähän, joten teknologioihin tutustuminen vei ohjelmiston toiminnallisten vaatimusten suppeuteen nähden huomattavasti aikaa. Tähän suhteuttaen myös scrumin melko yksityiskohtainen noudattaminen oli aikaa vievää. Tämä toki oli tietoinen päätös ja liittyi kurssin oppimistavoitteisiin.
 
